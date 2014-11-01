@@ -34,6 +34,14 @@ blockquote {
   color: #808080;
   font-style: italic;
 }
+
+.sep {
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  color: #ddd;
+}
+
 hr.small {
   max-width: 100px;
   margin: 15px auto;
@@ -206,17 +214,19 @@ hr.small {
   }
 }
 .post-preview > a {
-  color: #404040;
+  color: #444;
+  text-align: center;
 }
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
-  color: #0085a1;
+  color: #307EA9;
 }
 .post-preview > a > .post-title {
-  font-size: 30px;
+  font-size: 20px;
   margin-top: 30px;
   margin-bottom: 10px;
+  line-height: 160%;
 }
 .post-preview > a > .post-subtitle {
   margin: 0;
@@ -224,10 +234,14 @@ hr.small {
   margin-bottom: 10px;
 }
 .post-preview > .post-meta {
-  color: #808080;
-  font-size: 18px;
-  font-style: italic;
+  color: #888;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
   margin-top: 0;
+  letter-spacing: 3px;
+  font-family: 'arial';
+  margin-bottom: 10px;
 }
 .post-preview > .post-meta > a {
   text-decoration: none;
@@ -240,7 +254,7 @@ hr.small {
 }
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
-    font-size: 36px;
+    font-size: 20px;
   }
 }
 .section-heading {
@@ -342,6 +356,11 @@ form .row:first-child .floating-label-form-group {
 .pager {
   margin: 20px 0 0;
 }
+.pager .next > a,
+.pager .next > span {
+  float: none;
+}
+
 .pager li > a,
 .pager li > span {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -350,29 +369,30 @@ form .row:first-child .floating-label-form-group {
   font-weight: 800;
   letter-spacing: 1px;
   padding: 10px 5px;
-  background-color: white;
+  background-color: transparent;
   border-radius: 0;
+  border-width: 0;
 }
 @media only screen and (min-width: 768px) {
   .pager li > a,
   .pager li > span {
     font-size: 14px;
     padding: 15px 25px;
+    background-color: transparent;
   }
 }
 .pager li > a:hover,
 .pager li > a:focus {
-  color: white;
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  color: #307EA9;
+  background-color: transparent;
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,
 .pager .disabled > a:focus,
 .pager .disabled > span {
   color: #808080;
-  background-color: #404040;
   cursor: not-allowed;
+  background-color: transparent;
 }
 ::-moz-selection {
   color: white;

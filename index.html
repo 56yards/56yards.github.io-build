@@ -16,9 +16,9 @@ header-img: "img/home-bg.jpg"
         </h3>
         {% endif %}
     </a>
-    <p class="post-meta">Posted by {{ post.author }} on {{ post.date | date: "%B %-d, %Y" }}</p>
+    <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
 </div>
-<hr>
+<span class="sep">&ac;</span>
 {% endfor %}
 
 <!-- Pager -->
